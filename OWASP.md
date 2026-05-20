@@ -40,4 +40,7 @@ The OWASP Top 10 for 2025 are:
     <td>Insecure Designs</td>
     <td>The building was designed with no fire escapes. The architecture itself is flawed, not just a mistake in implementation.</td>
   </tr>
+  <tr>
+    <td>A07</td>
+  </tr>
 </table>
