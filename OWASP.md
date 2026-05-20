@@ -42,5 +42,6 @@ The OWASP Top 10 for 2025 are:
   </tr>
   <tr>
     <td>A07</td>
+    <td></td>
   </tr>
 </table>
