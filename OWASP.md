@@ -20,4 +20,24 @@ The OWASP Top 10 for 2025 are:
     <td>Security Misconfiguration</td>
     <td>Leaving doors unlocked, windows open or using default passwords. Software is setup wrong, leaving holes attackers can walk through.</td>
   </tr>
+  <tr>
+    <td>A03</td>
+    <td>Software Supply Chain Failures</td>
+    <td>You buy a phone, but the charger that came in the box was tampered with at the factory. Bad code sneaks in through third party libraries or build tools.</td>
+  </tr>
+  <tr>
+    <td>A04</td>
+    <td>Cryptographic Failures</td>
+    <td>Sending a secret letter but using a code that a 5 year old could crack. Encryption is weak or missing, so sensitive data gets exposed.</td>
+  </tr>
+  <tr>
+    <td>A05</td>
+    <td>Injection</td>
+    <td>You ask someone "Waht is your name?" and they reply with a command that makes your computer to do something bad. Untrusted input gets treated as a command.</td>
+  </tr>
+  <tr>
+    <td>A06</td>
+    <td>Insecure Designs</td>
+    <td>The building was designed with no fire escapes. The architecture itself is flawed, not just a mistake in implementation.</td>
+  </tr>
 </table>
