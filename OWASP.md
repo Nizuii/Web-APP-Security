@@ -97,4 +97,8 @@ It's not one bug. It's a category of "slopiness" that creates many entry points.
 
 ## A03 - Software Supply Chain Failures.
 
-Modern softwares are built like a chain - your app depends on libraries, which depend on other libraries, which depend on more libraries. If any link in that chain is compromised, your entire app is at risk. Imagine a scenario that you buy a car. The car is fine, But the tires were made in a factory that used defective rubber. The car crashes because of the tires. You trusted the tire supplier, but they let you down. Or think of it like a restaurant: you serve a salad, but the lettuce supplier had an E. coli outbreak. Your restaurant gets blamed even though you didn't grow the lettuce.
+Modern softwares are built like a chain - your app depends on libraries, which depend on other libraries, which depend on more libraries. If any link in that chain is compromised, your entire app is at risk. Imagine a scenario that you buy a car. The car is fine, But the tires were made in a factory that used defective rubber. The car crashes because of the tires. You trusted the tire supplier, but they let you down. Or think of it like a restaurant: you serve a salad, but the lettuce supplier had an E. coli outbreak. Your restaurant gets blamed even though you didn't grow the lettuce. Commom examples are:
+- A popular JS library (like `colors` or `node-ipc`) gets hijacked and starts stealing data.
+- A developer downloads a malicious package from a public repository that looks legitimate.
+- A build tool or CI/CD pipeline is compromised, injecting malware into your software before it's even released.
+- Using outdated libraries with known vulnerabilities.
