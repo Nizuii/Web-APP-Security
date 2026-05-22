@@ -61,3 +61,10 @@ The OWASP Top 10 for 2025 are:
     <td>When something goes wrong, the system panics and reveals secrets like error messages showing passwords.</td>
   </tr>
 </table>
+
+## 1. A01 - Broken Access Control.
+
+Access control is the system that decides who can do what in an application. When it's broken, users can access data or perform actions that they shouldn't be allowed to do. Imagine a hospital scenario where every doctors key card opens every patients room, not just their assigned patients. Or worse -  a visitor's card opens the pharmacy. That is broken access control. Common examples are:
+- A regular user can access an admin dashboard just by changing the URL from `/user/dashboard` to `/admin/dashboard`.
+- You can view another user's order history by simply changing the order ID in the URL (`/orders/1234` ➡️ `/orders/1235`).
+- An API lets you delete any account, not just your own.
