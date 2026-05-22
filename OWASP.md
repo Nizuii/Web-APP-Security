@@ -83,4 +83,18 @@ The application or its infrastructure is setup incorrectly - default passwords, 
 - Leave the construction crew's spare key under the mat.
 - Have a sign in the front yard saying "Alarm code is 1234".
 
-That's security misconfiguration.
+That's security misconfiguration. Common examples are:
+- Default admin credentials like `admin/admin` or `root/passowrd`.
+- Error pages showing full stack traces with database passwords.
+- Unnessary services running (like a test database exposed to the internet).
+- Missing security headers on web pages.
+
+It's not one bug. It's a category of "slopiness" that creates many entry points. Attackers use automated scanners to find misconfigured systems constantly. Inorder to prevent it:
+- Remove default accounts and change default passwords immediately.
+- Disable unnecessary features, ports, and services.
+- Keep software patched and updated.
+- Send HTTP headers with every HTTP response.
+
+## A03 - Software Supply Chain Failures.
+
+Modern softwares are built like a chain - your app depends on libraries, which depend on other libraries, which depend on more libraries. If any link in that chain is compromised, your entire app is at risk. Imagine a scenario that you buy a car. The car is fine, But the tires were made in a factory that used defective rubber. The car crashes because of the tires. You trusted the tire supplier, but they let you down. Or think of it like a restaurant: you serve a salad, but the lettuce supplier had an E. coli outbreak. Your restaurant gets blamed even though you didn't grow the lettuce.
