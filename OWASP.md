@@ -68,3 +68,19 @@ Access control is the system that decides who can do what in an application. Whe
 - A regular user can access an admin dashboard just by changing the URL from `/user/dashboard` to `/admin/dashboard`.
 - You can view another user's order history by simply changing the order ID in the URL (`/orders/1234` ➡️ `/orders/1235`).
 - An API lets you delete any account, not just your own.
+
+It is often the easiest vulnerability to exploit. No special tools needed - just modify a URL parameter and boom, you are in someone else's account. Inorder to prevent it:
+- Deny access by default - if a page/resource isn't explicitly allowed, block it.
+- Validate access on the server side.
+- Use proper session management and role based access control.
+- Log access control failures and alert on them.
+
+## 2. A02 - Security Misconfiguration.
+
+The application or its infrastructure is setup incorrectly - default passwords, unnecessary features enabled, error messages revealing too much, outdated software, etc... Real life anolagies are:
+- Leave the default lock code as `0000`.
+- Dont lock the lock bar.
+- Leave the construction crew's spare key under the mat.
+- Have a sign in the front yard saying "Alarm code is 1234".
+
+That's security misconfiguration.
