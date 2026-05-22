@@ -73,4 +73,9 @@ Common Operators are:
     <td>Search for only specific file types.</td>
     <td>filetype:pdf "internal use only"</td>
   </tr>
+  <tr>
+    <td>intitle:</td>
+    <td>Search in the page title only</td>
+    <td>intitle:"index of" "passwords"</td>
+  </tr>
 </table>
