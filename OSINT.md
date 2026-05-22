@@ -81,3 +81,6 @@ Common Operators are:
 </table>
 
 <img width="1865" height="968" alt="image" src="https://github.com/user-attachments/assets/90980644-bd90-4865-85f3-48131dc83c4a" />
+
+### 2. Shodan
+Shodan is a search engine. but instead of searching for websites, it searches for internet connected devices.
