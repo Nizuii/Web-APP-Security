@@ -53,3 +53,5 @@ All of this is legal and ethical when done properly.
 ## Specific Tools We Need to Know
 
 ### 1. Google Dorking.
+Google Dorks are advanced search operators that let you find very specific things that regular searches miss. It's not "hacking google" - it's using google's own advanced features to find information that happens to be publicly accessible. Example: Instead of typing: `company confidential documents` we search: `site:github.com filetype:pdf "confidential"`. This tells Google: "Only search within company.com, only returns PDF files, and inly if they contain the word 'confidential'."
+
