@@ -44,8 +44,8 @@ All of this is legal and ethical when done properly.
 │  for?           │     │  sources        │     │  find patterns  │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
                                                         │
-┌─────────────────┐     ┌─────────────────┐            │
-│  5. REPORT      │◄────│  4. PIVOT       │◄───────────┘
+┌─────────────────┐     ┌─────────────────┐             │
+│  5. REPORT      │◄────│  4. PIVOT       │◄─────────── ┘
 │  Present your   │     │  Use new info   │
 │  findings       │     │  to find more   │
 └─────────────────┘     └─────────────────┘
