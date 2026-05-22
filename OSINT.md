@@ -50,3 +50,6 @@ All of this is legal and ethical when done properly.
 │  findings       │     │  to find more   │
 └─────────────────┘     └─────────────────┘
 ```
+## Specific Tools We Need to Know
+
+### 1. Google Dorking.
