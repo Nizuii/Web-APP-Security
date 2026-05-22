@@ -79,3 +79,5 @@ Common Operators are:
     <td>intitle:"index of" "passwords"</td>
   </tr>
 </table>
+
+<img width="1865" height="968" alt="image" src="https://github.com/user-attachments/assets/90980644-bd90-4865-85f3-48131dc83c4a" />
