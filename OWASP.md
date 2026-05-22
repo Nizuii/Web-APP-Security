@@ -13,7 +13,7 @@ The OWASP Top 10 for 2025 are:
   <tr>
     <td>A01</td>
     <td>Broken Access Control</td>
-    <td>Imagine a hotel where any guest's key card can open aby room. That's broken access control - Users can access things they shouldn't.</td>
+    <td>Imagine a hotel where any guest's key card can open any room. That's broken access control - Users can access things they shouldn't.</td>
   </tr>
   <tr>
     <td>A02</td>
