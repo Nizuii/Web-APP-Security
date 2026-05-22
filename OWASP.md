@@ -42,6 +42,22 @@ The OWASP Top 10 for 2025 are:
   </tr>
   <tr>
     <td>A07</td>
-    <td></td>
+    <td>Authentication Failures</td>
+    <td>The bouncer at a club lets anyone in because he doesn't check ID's properly. Login systems are weak or bypassable.</td>
+  </tr>
+  <tr>
+    <td>A08</td>
+    <td>Software Data Integrity Failures</td>
+    <td>Someone swaps your download with a fake version. Code or data gets modified without you knowing.</td>
+  </tr>
+  <tr>
+    <td>A09</td>
+    <td>Security Logging & Alerting Failures</td>
+    <td>A burglar breaks in, but there are no cameras and no alarms. You don't even know you were attacked.</td>
+  </tr>
+  <tr>
+    <td>A10</td>
+    <td>Mishandling of Exceptional Conditions</td>
+    <td>When something goes wrong, the system panics and reveals secrets like error messages showing passwords.</td>
   </tr>
 </table>
