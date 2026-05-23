@@ -165,4 +165,33 @@ Attackers use shodan to:
   </tr>
 </table>
 
+Censys is great for:
+- **Certificate Transparency**: Finding all SSL/TLS certificates issued for a domain (even subdomains you forgot about).
+- **Host Analysis**: Deep inspection of what services run on a specific IP.
+- **Attack Surface Management**: Continuous monitoring of what your organization exposes
+
+Lets look at some example surfaces.
+<table>
+  <tr>
+    <th>What We Want</th>
+    <th>Censys Query</th>
+  </tr>
+  <tr>
+    <td>All subdomains of a company</td>
+    <td>Search for certificates issued to *.company.com</td>
+  </tr>
+  <tr>
+    <td>Specific software version</td>
+    <td>services.software.product: "OpenSSH" and services.software.version: "7.4"</td>
+  </tr>
+  <tr>
+    <td>Vulnerable services</td>
+    <td>services.http.response.headers.server: "Apache/2.4.41"</td>
+  </tr>
+  <tr>
+    <td>Your own exposure</td>
+    <td>Search for your organization's domain name</td>
+  </tr>
+</table>
+
 <img width="1869" height="968" alt="image" src="https://github.com/user-attachments/assets/9ad296f6-f4e7-4588-bc23-e84c55cc82be" />
