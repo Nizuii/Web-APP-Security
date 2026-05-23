@@ -133,3 +133,36 @@ Attackers use shodan to:
 - Map targets before an attack
 
 <img width="1868" height="964" alt="image" src="https://github.com/user-attachments/assets/127150dd-2dff-4f6c-9d12-132096df4ec2" />
+
+### 3. Censys.
+**Censys** is similar to shodan. It is a search for internet connected assets. However, it focuses more on enterprise security and certificate transparency. Lets take a look at how censys is different from shodan.
+
+<table>
+  <tr>
+    <th>Feature</th>
+    <th>Shodan</th>
+    <th>Censys</th>
+  </tr>
+  <tr>
+    <td>Focus</td>
+    <td>All internet-connected devices</td>
+    <td>Enterprise assets, certificates, hosts</td>
+  </tr>
+  <tr>
+    <td>Data Source</td>
+    <td>Direct internet scanning</td>
+    <td>Multiple sources including scans + certificate logs</td>
+  </tr>
+  <tr>
+    <td>Best for</td>
+    <td>Finding IoT, webcams, industrial systems</td>
+    <td>Tracking organizational attack surface, certificate monitoring</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>Simpler, more visual</td>
+    <td>More detailed technical data</td>
+  </tr>
+</table>
+
+<img width="1869" height="968" alt="image" src="https://github.com/user-attachments/assets/9ad296f6-f4e7-4588-bc23-e84c55cc82be" />
