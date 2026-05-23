@@ -83,4 +83,38 @@ Common Operators are:
 <img width="1865" height="968" alt="image" src="https://github.com/user-attachments/assets/90980644-bd90-4865-85f3-48131dc83c4a" />
 
 ### 2. Shodan
-Shodan is a search engine. but instead of searching for websites, it searches for internet connected devices.
+Shodan is a search engine. but instead of searching for websites, it searches for internet connected devices. Think of an analogy like google ginds the menu of a restaurant. But shadon finds the kitchen equipment, security cameras, and back doors of that restaurant. Shodan finds:
+- Webcams (including unsecured ones).
+- Routers and Firewalls.
+- Industrial control systems.
+- Medical devices.
+- Printers.
+- Servers and databases.
+- Internet of Things (IoT devices).
+
+Shodan constantly scans the entire internet (aa 4+ billion IP address), banner-grabbing information from devices that responds. It catalogs:
+- What softwares are they running.
+- What ports are open.
+- What version of OS.
+- Default credentials still in use.
+
+Example search queries are:
+
+<table>
+  <tr>
+    <th>What We Want</th>
+    <th>Shodan Query</th>
+  </tr>
+  <tr>
+    <td>Webcams in a specific country</td>
+    <td>webcam country:US</td>
+  </tr>
+  <tr>
+    <td>Unsecured MongoDB databases</td>
+    <td>mongodb port:27017 -authentication</td>
+  </tr>
+  <tr>
+    <td>Apache servers with a specific version</td>
+    <td>apache version:2.4.41</td>
+  </tr>
+</table>
