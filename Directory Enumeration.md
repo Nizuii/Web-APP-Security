@@ -10,4 +10,7 @@ Finding these can reveal vulnerabilities or sensitive information. Now lets brea
 
 ## 1. DIRB
 
-**Dirb**
+**Dirb** is a classic command-line tool that brute-forces directories using a wordlist. It works when we give a URL and a list of common directory names. It tries each one and tells you which ones exist. Example it tries: `example.com/admin`, `example.com/login`, `example.com/backup` etc... and reports back which returned a valid page.
+
+<img width="1925" height="1080" alt="image" src="https://github.com/user-attachments/assets/018abd29-6b04-4dba-87cc-0707b2d2c17c" />
+
