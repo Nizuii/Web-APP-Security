@@ -117,4 +117,19 @@ Example search queries are:
     <td>Apache servers with a specific version</td>
     <td>apache version:2.4.41</td>
   </tr>
+  <tr>
+    <td>A specific IP address</td>
+    <td>ip:192.168.1.1</td>
+  </tr>
 </table>
+
+Defenders use shodan to:
+- Discover what their organization has accidentally exposed
+- Find shadow IT (devices employees connected without approval)
+- Monitor for misconfigurations
+
+Attackers use shodan to:
+- Find vulnerable devices to exploit
+- Map targets before an attack
+
+<img width="1868" height="964" alt="image" src="https://github.com/user-attachments/assets/127150dd-2dff-4f6c-9d12-132096df4ec2" />
