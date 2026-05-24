@@ -1,8 +1,8 @@
 # What is Web Crawling?
 
 Imagine internet as a giant library with billions of books (websites). Wb crawling is like sending a robot to browse through these books, read their pages, and collect information automatically. Lets think og a somple analogy:
-- We: Person reading one book at a time.
-- Web Crawler: Robot that can read thousands of these books per seconds and copy down important notes.
+- **We**: Person reading one book at a time.
+- **Web Crawler**: Robot that can read thousands of these books per seconds and copy down important notes.
 Now lets take a look at why security professionals use web crawling?
 
 <table>
