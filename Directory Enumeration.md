@@ -14,3 +14,6 @@ Finding these can reveal vulnerabilities or sensitive information. Now lets brea
 
 <img width="1925" height="1080" alt="image" src="https://github.com/user-attachments/assets/018abd29-6b04-4dba-87cc-0707b2d2c17c" />
 
+## 2. DirBuster
+
+**DirBuster** is similar to DIRB but with a graphical user interface (GUI). It is easier for beginners to use. It also uses wordlist but lets us see results visually. It can be slower but it is more user-friendly.
