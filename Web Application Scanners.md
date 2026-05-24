@@ -21,3 +21,6 @@ nikto -h http://targetwebsite.com
 
 ## 2. OpenVas
 **OpenVas** is a full-featured vulnerability scanner that checks for security issues across networks, not just web apps. What it does is: scans for thousands of known vulnerabilities (CVE's), provides detailed reports with risk ratings, can scan entire networks, not just single web servers, uses a constantly updated database of vulnerability tests. It is comprehensive and used by many security professionals worldwide.
+
+## 3. Vega
+**Vega** is an open source web security scanner and testing platform. What it does is it finds vulnerabilities like XSS, SQL injection, and more, It includes an intercepting proxy, can perform both automated scanning and manual testing, has graphical user interface which is great for beginners.
