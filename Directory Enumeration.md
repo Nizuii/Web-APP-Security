@@ -20,4 +20,4 @@ Finding these can reveal vulnerabilities or sensitive information. Now lets brea
 
 ## 3. Burp Suite
 
-**Burp Suite** is a professional web security testing platform. It is much more than just directory enumeration. It can intercept requests, scan for vulnerabilities and automate attacks.
+**Burp Suite** is an integrated platform (a collection of tools in one application) for testing web application security. Think of it as a "security Swiss Army knife" for websites. It sits between our browser and the website like a security check point letting us see, modify and automate every requests that goes back and forth.
