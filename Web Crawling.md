@@ -35,4 +35,5 @@ It is a free security tool maintained by OWASP (a non profit security organizati
 
 <img width="1922" height="1080" alt="image" src="https://github.com/user-attachments/assets/15aa6e6f-fe06-4c68-ab96-b09b6eecb50e" />
 
-
+## 2. HTTrack
+It is a tool that downloads entire websites to our computer. It creates a complete offline copy of a website and is best for analyzing the websites structure and offline content. HTTrack is alo free and open source tool. Key features are it downloads HTML, Images, CSS and other files, preserves the original website structure, lets us browse the copied site without internet, useful for documenting evidence or analyzing code offline.
