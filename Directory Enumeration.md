@@ -17,3 +17,7 @@ Finding these can reveal vulnerabilities or sensitive information. Now lets brea
 ## 2. DirBuster
 
 **DirBuster** is similar to DIRB but with a graphical user interface (GUI). It is easier for beginners to use. It also uses wordlist but lets us see results visually. It can be slower but it is more user-friendly.
+
+## 3. Burp Suite
+
+**Burp Suite** is a professional web security testing platform. It is much more than just directory enumeration. It can intercept requests, scan for vulnerabilities and automate attacks.
