@@ -8,4 +8,13 @@ A vulnerability is a weakness or flaw in the web application that an attacker ca
 - **Cross-Site Request Forgery (CSRF)**: Attackers tricking users into performing unwanted actions.
 - **Security Misconfigurations**: servers left in insecure default settings.
 
-Since manually finding vulnerability is nearly impossible and very time conmsuming, security professionals use automated scanners which are specialised tools that crawl through a web application and test it for known vulnerabilities.
+Since manually finding vulnerability is nearly impossible and very time conmsuming, security professionals use automated scanners which are specialised tools that crawl through a web application and test it for known vulnerabilities. Now lets go through some known scanner mainly used by testers inorder to scan web apps:
+
+## 1. Nikto
+**Nikto** is an open source web scanner that looks for dangerous files, outdated software and misconfigurations. What it does is it scans web servers for 6,700+ known vulnerabilities, checks for outdated server softwares, identifies default files and configurations that might be insecure, looks for common web server misconfigurations. For begginers its simple, free and runs from the command line. Example:
+
+```bash
+nikto -h http://targetwebsite.com
+```
+
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feedc8b9-11a3-45c1-bd40-1010699b2c21" />
