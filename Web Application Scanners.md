@@ -18,3 +18,6 @@ nikto -h http://targetwebsite.com
 ```
 
  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feedc8b9-11a3-45c1-bd40-1010699b2c21" />
+
+## 2. OpenVas
+**OpenVas** is a full-featured vulnerability scanner that checks for security issues across networks, not just web apps. What it does is: scans for thousands of known vulnerabilities (CVE's), provides detailed reports with risk ratings, can scan entire networks, not just single web servers, uses a constantly updated database of vulnerability tests. It is comprehensive and used by many security professionals worldwide.
