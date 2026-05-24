@@ -32,3 +32,7 @@ Now lets take a look at the major 3 tools used for web crawling:
 
 ## 1. ZAP (OWASP Zed Attack Proxy)
 It is a free security tool maintained by OWASP (a non profit security organization). It crawls websites and tests them for security vulnerabilities automatically. It is best for beginners who want to learn both crawling and basic security testing. It is completly free and has key features like automatic spider (crawler) that clicks every link it finds, finds forms, login pages, and hidden directories, shows us a "site map" of the entire website structure, and can run active security scans after crawling.
+
+<img width="1922" height="1080" alt="image" src="https://github.com/user-attachments/assets/15aa6e6f-fe06-4c68-ab96-b09b6eecb50e" />
+
+
