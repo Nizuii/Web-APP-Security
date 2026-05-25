@@ -22,7 +22,7 @@ The malicious script is saved into the website's database. Every user who loads 
 - Every visitor is affected, not just one
 - Most dangerous type
 
-
+## 3. DOM-Based XSS
 **Real scenario**: A page has JavaScript that does `document.getElementById('msg').innerHTML = location.hash`. An attacker sends a link like `page.html#<img src=x onerror=stealCookies()>`. The server never sees the attack — your own browser's JavaScript does the damage.
 - Server never sees the payload
 - Purely a JavaScript-side vulnerability
