@@ -179,3 +179,19 @@ Prevention methoods are:
 - Apply the principle of least privilege to database accounts
 - Use Web Application Firewalls (WAFs) as an extra layer
 
+## A06 - Insecure Design
+This is a fundamental flaw in the architecture or design of the application — not just a coding mistake. The system was designed in a way that makes security impossible or very difficult. Think of a real world analogy. We design a bank vault, but:
+- We put the vault door on the outside wall facing the street
+- The ventilation shaft is wide enough for a person to crawl through
+- There's no alarm system, just a "Please don't steal" sign
+No matter how well you build it, the design itself is insecure. Common examples include:
+- A business workflow that allows users to change prices before checkout
+- A password reset flow that only asks for an email (no secondary verification)
+- An e-commerce site that processes payments on the client side (where users can modify the price)
+- Designing a system where sensitive data flows through untrusted components
+Now lets look at how to prevent it:
+- Use threat modeling — think like an attacker during the design phase
+- Apply secure design patterns and principles (defense in depth, least privilege)
+- Segregate components by trust level
+- Validate business logic, not just technical inputs
+- Review designs with security experts before coding begins
