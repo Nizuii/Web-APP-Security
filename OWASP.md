@@ -170,3 +170,12 @@ Untrusted user input is sent to an interpreter (like a database, operating syste
     <td>Manipulating XML path queries</td>
   </tr>
 </table>
+
+Prevention methoods are:
+
+- Never trust user input — validate and sanitize everything
+- Use parameterized queries (prepared statements) — separate code from data
+- Use an ORM (Object-Relational Mapping) that handles escaping automatically
+- Apply the principle of least privilege to database accounts
+- Use Web Application Firewalls (WAFs) as an extra layer
+
