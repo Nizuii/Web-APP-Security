@@ -135,3 +135,38 @@ It is dangerous because ff an attacker gets access to your database or intercept
 - Never hardcode keys — use secure key management systems
 - Encrypt sensitive data at rest (databases, backups, logs)
 
+## A05 — Injection
+
+Untrusted user input is sent to an interpreter (like a database, operating system, or browser) as part of a command or query. The interpreter executes the malicious input as code. Think of a real world analogy like you go to a restaurant and order: "Burger and fries; also, give me all the money from the cash register." If the waiter blindly writes down your entire order and hands it to the kitchen without checking, the kitchen might actually try to give you the money. That's injection — the system trusted your input and treated it as an instruction. Common types are:
+<table>
+  <tr>
+    <th>Type</th>
+    <th>What it targets</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>SQL Injection</td>
+    <td>Databases</td>
+    <td>Inputting ' OR '1'='1 into a login field to bypass authentication</td>
+  </tr>
+  <tr>
+    <td>Command Injection</td>
+    <td>Operating System</td>
+    <td>Inputting ; rm -rf / into a web form that runs shell commands</td>
+  </tr>
+  <tr>
+    <td>LDAP Injection</td>
+    <td>Directory services</td>
+    <td>Manipulating LDAP queries to access unauthorized data</td>
+  </tr>
+  <tr>
+    <td>NoSQL Injection</td>
+    <td>NoSQL databases</td>
+    <td>Injecting malicious JSON into MongoDB queries</td>
+  </tr>
+  <tr>
+    <td>XPath Injection</td>
+    <td>XML documents</td>
+    <td>Manipulating XML path queries</td>
+  </tr>
+</table>
