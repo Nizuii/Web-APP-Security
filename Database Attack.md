@@ -6,3 +6,10 @@ A database server is a computer that stores, manages and serves data to other co
 - **Microsoft SQL Server** - Microsoft's database.
 - **Oracle Database** - Enterprise grade.
 - **SQLite** - lightweight, often used in apps.
+
+## What is SQL?
+**SQL (Structured Query Language)** is the language used to talk to databases. Examples:
+
+```bash
+SELECT * FROM users WHERE username = 'john';
+```
