@@ -102,3 +102,36 @@ Modern softwares are built like a chain - your app depends on libraries, which d
 - A developer downloads a malicious package from a public repository that looks legitimate.
 - A build tool or CI/CD pipeline is compromised, injecting malware into your software before it's even released.
 - Using outdated libraries with known vulnerabilities.
+
+### Famous Real Incidents
+
+- **SolarWinds (2020)**: Attackers compromised the build process of a widely-used IT management tool, pushing malware to 18,000+ organizations, including government agencies.
+- **Log4j (2021)**: A logging library used by millions of applications had a critical vulnerability.
+
+Inorder to prevent it:
+- Use only trusted, verified libraries
+- Keep dependencies updated and monitor for vulnerabilities
+- Verify software integrity using checksums and digital signatures
+- Use Software Composition Analysis (SCA) tools to scan your dependencies
+- Isolate and secure your build environments
+
+## A04 — Cryptographic Failures
+
+Sensitive data is not properly protected using encryption. This includes data in transit (moving across the internet) and data at rest (stored in databases). Think of a real world analogy like you are sending a secret letter to a friend. Instead of sealing it in an envelope, you:
+- Send it on a postcard (anyone can read it)
+- Use a "code" that is just reversing the alphabet (a child could crack it)
+- Leave copies of the letter lying around your house
+That's cryptographic failure. Common examples includes:
+- Storing passwords in plain text (never do this!)
+- Using outdated or weak encryption algorithms like MD5 or SHA-1
+- Not using HTTPS — sending data over unencrypted HTTP
+- Hardcoding encryption keys in the source code
+- Not encrypting database backups
+
+It is dangerous because ff an attacker gets access to your database or intercepts network traffic, they can read everything. Passwords, credit card numbers, personal messages — all exposed. Inorder to prevent it:
+- Use strong, modern encryption (AES-256, RSA-2048, ChaCha20)
+- Always use HTTPS/TLS for data in transit
+- Hash passwords using strong algorithms like bcrypt, Argon2, or PBKDF2
+- Never hardcode keys — use secure key management systems
+- Encrypt sensitive data at rest (databases, backups, logs)
+
