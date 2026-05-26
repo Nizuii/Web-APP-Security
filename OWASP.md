@@ -217,3 +217,12 @@ That's authentication failure — the system meant to verify identity is broken.
 - **Session hijacking:** Session tokens (cookies) don't expire or are predictable
 - **Missing MFA:** No multi-factor authentication — if someone guesses your password, they're in
 - **Insecure password reset:** Reset links sent over HTTP, or links that don't expire
+
+How to prevent it:
+
+- Enforce strong password policies (length > complexity)
+- Implement Multi-Factor Authentication (MFA) wherever possible
+- Rate-limit login attempts to stop brute force
+- Use secure session management — random tokens, proper expiration, HTTPS-only
+- Check passwords against known breach databases (like HaveIBeenPwned)
+- Don't implement your own authentication — use battle-tested frameworks (OAuth, OpenID Connect)
