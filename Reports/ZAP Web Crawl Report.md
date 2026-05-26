@@ -92,27 +92,27 @@
     <td>Apache/PHP version in HTTP response headers</td>
   </tr>
   <tr>
-    <td>CSP Header Not Set</td>
-    <td>Medium</td>
+    <td>X-Content-Type Missing</td>
+    <td>LOW</td>
     <td>Systemic</td>
-    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+    <td>MIME-type sniffing possible — browser may misinterpret files</td>
   </tr>
   <tr>
-    <td>CSP Header Not Set</td>
-    <td>Medium</td>
-    <td>Systemic</td>
-    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+    <td>Auth Request Identified</td>
+    <td>INFO</td>
+    <td>-</td>
+    <td>ZAP found the login form — can be used for auth testing</td>
   </tr>
   <tr>
-    <td>CSP Header Not Set</td>
-    <td>Medium</td>
-    <td>Systemic</td>
-    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+    <td>Suspicious Comments</td>
+    <td>Info</td>
+    <td>-</td>
+    <td>Developer comments in HTML/JS may leak info</td>
   </tr>
   <tr>
-    <td>CSP Header Not Set</td>
-    <td>Medium</td>
-    <td>Systemic</td>
-    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+    <td>Session Mgmt Identified</td>
+    <td>Info</td>
+    <td>6</td>
+    <td>ZAP identified session handling points — useful for session attacks</td>
   </tr>
 </table>
