@@ -116,3 +116,43 @@
     <td>ZAP identified session handling points — useful for session attacks</td>
   </tr>
 </table>
+
+### OWASP Mapping
+
+<table>
+  <tr>
+    <th>OWASP Category</th>
+    <th>Findings</th>
+    <th>Risk</th>
+  </tr>
+  <tr>
+    <td><strong>A01 — Broken Access Control</strong></td>
+    <td>Path Traversal, Cookie SameSite</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td><strong>A02 — Cryptographic Failures</strong></td>
+    <td>Cookie HttpOnly, Cookie SameSite</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td><strong>A03 — Injection</strong></td>
+    <td>SQL Injection (3), XSLT Injection (2)</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td><strong>A05 — Security Misconfiguration</strong></td>
+    <td>CSP missing, Anti-Clickjacking missing, X-Content-Type missing, Server header leak, Debug errors</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td><strong>A06 — Vulnerable Components</strong></td>
+    <td>Server version leak — known CVE lookup possible</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td><strong>A07 — Auth & Session Failures</strong></td>
+    <td>Session Mgmt identified (6 points), Auth Request Identified</td>
+    <td>Info</td>
+  </tr>
+</table>
