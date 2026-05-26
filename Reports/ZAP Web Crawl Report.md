@@ -49,4 +49,70 @@
     <td>Systemic</td>
     <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
   </tr>
+  <tr>
+    <td>Missing Anti-Clickjacking</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>Site can be embedded in iframes — clickjacking attacks possible</td>
+  </tr>
+  <tr>
+    <td>XSLT Injection</td>
+    <td>Medium</td>
+    <td>2</td>
+    <td>XML/XSLT input not sanitized — potential code execution</td>
+  </tr>
+  <tr>
+    <td>Cookie No HttpOnly Flag</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>Session cookies readable by JavaScript — XSS can steal sessions</td>
+  </tr>
+  <tr>
+    <td>Cookie No SameSite</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>CSRF attacks possible — cookies sent cross-site</td>
+  </tr>
+  <tr>
+    <td>In Page Banner Info Leak</td>
+    <td>Low</td>
+    <td>2</td>
+    <td>App/server version visible in page content</td>
+  </tr>
+  <tr>
+    <td>Debug Error Messages</td>
+    <td>LOW</td>
+    <td>2</td>
+    <td>Stack traces or PHP errors exposed to users</td>
+  </tr>
+  <tr>
+    <td>Server Version via Header</td>
+    <td>LOW</td>
+    <td>-</td>
+    <td>Apache/PHP version in HTTP response headers</td>
+  </tr>
+  <tr>
+    <td>CSP Header Not Set</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+  </tr>
+  <tr>
+    <td>CSP Header Not Set</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+  </tr>
+  <tr>
+    <td>CSP Header Not Set</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+  </tr>
+  <tr>
+    <td>CSP Header Not Set</td>
+    <td>Medium</td>
+    <td>Systemic</td>
+    <td>No Content Security Policy — XSS attacks have no browser-level defense</td>
+  </tr>
 </table>
