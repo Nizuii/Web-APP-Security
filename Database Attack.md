@@ -27,4 +27,30 @@ The query becomes:
 SELECT * FROM users WHERE username = 'admin' OR '1'='1' AND password = 'anything'
 ```
 
-Since '1'='1' is always true, the database returns the admin user — you're logged in without a password!
+Since '1'='1' is always true, the database returns the admin user — you're logged in without a password. Now lets take a look at different types of SQL injection.
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>In-band (Classic) SQLi</td>
+    <td>Attacker uses the same channel to send the payload and get results. Includes Error-based and Union-based</td>
+  </tr>
+  <tr>
+    <td>Bind SQLi</td>
+    <td>No direct output. Attacker infers results based on behavior (true/false responses or time delays)</td>
+  </tr>
+  <tr>
+    <td>Out-of-band SQLi</td>
+    <td>Data is sent to a different server/channel (less common)</td>
+  </tr>
+</table>
+
+## Introduction to SQLMap
+**SQLMap** is an open source automated tool that detects and exploits SQL injection vulnerabilities. It does the heavy lifting for you so that we dont need to manually craft every payload. We use SQLMap because:
+- Automatically finds SQLi vulnerabilities
+- Supports many database types (MySQL, PostgreSQL, Oracle, etc.)
+- Can extract database names, tables, columns, and even dump full data
+- Works on Linux, Windows, and macOS
