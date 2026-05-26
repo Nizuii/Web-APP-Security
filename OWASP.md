@@ -184,12 +184,16 @@ This is a fundamental flaw in the architecture or design of the application — 
 - We put the vault door on the outside wall facing the street
 - The ventilation shaft is wide enough for a person to crawl through
 - There's no alarm system, just a "Please don't steal" sign
+
 No matter how well you build it, the design itself is insecure. Common examples include:
+
 - A business workflow that allows users to change prices before checkout
 - A password reset flow that only asks for an email (no secondary verification)
 - An e-commerce site that processes payments on the client side (where users can modify the price)
 - Designing a system where sensitive data flows through untrusted components
+
 Now lets look at how to prevent it:
+
 - Use threat modeling — think like an attacker during the design phase
 - Apply secure design patterns and principles (defense in depth, least privilege)
 - Segregate components by trust level
