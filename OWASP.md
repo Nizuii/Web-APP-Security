@@ -199,3 +199,21 @@ Now lets look at how to prevent it:
 - Segregate components by trust level
 - Validate business logic, not just technical inputs
 - Review designs with security experts before coding begins
+
+## A07 — Authentication Failures 
+
+The mechanisms that verify who a user is (login systems) are weak, broken, or bypassable. Attackers can impersonate legitimate users. Think of a real world analogy. Imagine a nightclub where:
+- The bouncer doesn't check IDs properly
+- Anyone can say "I'm on the list" and get in
+- VIP passes are easy to photocopy
+- The back door is always unlocked
+- If you guess someone's birthday, you can reset their VIP membership
+
+That's authentication failure — the system meant to verify identity is broken. Common examples are:
+
+- **Weak password policies:** Allowing passwords like "123456" or "password"
+- **Credential stuffing:** Attackers use leaked username/password combos from other breaches because people reuse passwords
+- **Brute force attacks:** No rate limiting — an attacker can try millions of passwords
+- **Session hijacking:** Session tokens (cookies) don't expire or are predictable
+- **Missing MFA:** No multi-factor authentication — if someone guesses your password, they're in
+- **Insecure password reset:** Reset links sent over HTTP, or links that don't expire
