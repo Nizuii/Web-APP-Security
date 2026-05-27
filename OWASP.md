@@ -266,3 +266,25 @@ A burglar breaks in, cleans out the vault, and leaves. You come in the next morn
 - Set up real-time alerting for suspicious activity
 - Regularly review and test your logging and alerting systems
 
+## A10 — Mishandling of Exceptional Conditions 
+When something unexpected happens (an error, exception, or edge case), the application doesn't handle it gracefully. Instead, it might crash, expose sensitive information, or behave unpredictably — giving attackers clues or opening new vulnerabilities. Think of a real world analogy: You're at a bank and ask the teller for something they can't do (like withdraw money from a closed account). Instead of saying "I can't do that," the teller:
+- Panics and shows you the bank's internal ledger
+- Starts crying and reveals the vault combination
+- Freezes up, leaving the drawer open
+
+That's mishandling an exceptional condition — the error itself becomes a vulnerability. Common examples are:
+
+- **Verbose error messages:** A database error reveals the table structure: `Table 'users' doesn't exist` — now the attacker knows your database schema
+- **Stack traces in production:** Error pages show file paths, function names, and sometimes even credentials
+- **Race conditions:** Two users try to buy the last item simultaneously. The app doesn't handle it, so both succeed and you oversell.
+- **Resource exhaustion:** An attacker sends a specially crafted request that causes the app to use all memory/CPU, crashing it (Denial of Service)
+- **Integer overflow:** A calculation produces a number too large, wrapping around to a negative number — possibly bypassing security checks
+
+Now lets take a look at the prevention methods:
+
+- Catch and handle all exceptions gracefully
+- Show generic error messages to users; log detailed errors server-side
+- Never expose stack traces, file paths, or database details in production
+- Test for edge cases and unexpected inputs
+- Implement rate limiting and resource controls to prevent DoS
+- Use fuzz testing (sending random/garbage input) to find unexpected behavior
