@@ -226,3 +226,43 @@ How to prevent it:
 - Use secure session management — random tokens, proper expiration, HTTPS-only
 - Check passwords against known breach databases (like HaveIBeenPwned)
 - Don't implement your own authentication — use battle-tested frameworks (OAuth, OpenID Connect)
+
+## A08 - Software or Data Integrity Failures
+
+Code or data is modified without authorization, and the system doesn't detect it. This includes insecure deserialization, untrusted dependencies, and lack of integrity verification. Imagine a real world scenario:  
+You order a package from Amazon. Someone intercepts it, opens the box, replaces your laptop with a brick, reseals it, and delivers it. You open it and have no idea it was tampered with because the box looked fine. That's a data integrity failure — the content changed, but there was no way to detect it. Common examples are:
+- **Insecure Deserialization:** An application receives a serialized object (like a saved user session) and blindly trusts it. An attacker modifies the object to include malicious code, and the app executes it.
+- **No integrity checks on updates:** Your app auto-updates but doesn't verify the update file's signature. An attacker replaces it with malware.
+- **CI/CD pipeline tampering:** Code is modified during the build process before deployment
+- **Unsigned software:** Users download your app, but there's no way to verify it came from you
+
+Now lets take a loot at how to prevent it:
+- Never deserialize untrusted data
+- Use integrity checks (digital signatures, checksums) for all data and updates
+- Verify software signatures before installation
+- Use serialization formats that only contain data, not code (like JSON instead of pickle in Python)
+- Implement a software bill of materials (SBOM) to track what goes into your software
+
+## A09 — Security Logging & Alerting Failures
+When something bad happens, nobody knows about it. There's no logging, no monitoring, no alerting. Attackers can break in, steal data, and leave — and you won't even realize it happened until months later (if ever). Now lets take a real world analogy. You own a jewelry store:
+- There are no security cameras
+- The alarm system is turned off
+- The motion sensors are broken
+- The security guard sleeps on the job
+
+A burglar breaks in, cleans out the vault, and leaves. You come in the next morning and everything looks normal until you open the vault. You have no idea when it happened, who did it, or how they got in. That's logging and alerting failure. Common examples are:
+- No logs for login attempts (successful or failed)
+- No logs for sensitive actions (password changes, money transfers, admin actions)
+- Logs exist but aren't monitored — they just sit in a file nobody reads
+- No alerts for suspicious patterns (e.g., 1000 failed logins in 1 minute)
+- Logs are stored locally and get deleted when the server is compromised
+- Logs contain sensitive data (passwords, credit cards) — which is a privacy risk
+
+ Now lets look at the prevention methods:
+
+- Log all authentication attempts, access control failures, and input validation errors
+- Generate logs with enough detail to identify attackers (but not so much that you log passwords)
+- Store logs in a centralized, tamper-resistant system (not just on the server)
+- Set up real-time alerting for suspicious activity
+- Regularly review and test your logging and alerting systems
+
